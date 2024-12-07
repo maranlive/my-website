@@ -55,14 +55,11 @@ footer {
     position: relative; /* Change from 'fixed' to 'relative' */
     bottom: 0;
     width: 100%;
+    
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
     width: 80%; /* Set the width to 80% of the screen */
     text-align: justify; /* Justify the text */
     background: white;
@@ -97,4 +94,61 @@ ul {
 
 .profile-links li a:hover {
     color: #333;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: black;
+}
+
+.dark-mode a {
+    color: white;
+}
+.dark-mode .card {
+    background: #222; /* Only background color */
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+.dark-mode * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* Position the top-right section */
+#top-right-section {
+    position: absolute;  /* Use absolute positioning */
+    top: 10px;           /* Adjust top margin */
+    right: 10px;         /* Adjust right margin */
+    text-align: right;   /* Align text to the right */
+}
+
+#top-right-section p {
+    margin: 0;           /* Remove extra margin */
+    font-size: 14px;     /* Adjust font size if needed */
+}
+
+#top-right-section button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#top-right-section button:hover {
+    background-color: #333;
+}
+#current-datetime {
+    color: blue;        /* Set text color to blue */
+    font-size: 16px;    /* Adjust font size */
+    font-weight: bold;  /* Make it bold if needed */
+    margin: 0;          /* Remove default margin */
 }
