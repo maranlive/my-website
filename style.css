@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px; /* Add some padding for a clickable area */
+    border-radius: 5px; /* Optional: Rounded edges */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Highlight color on hover */
+    color: white; /* Ensure text remains readable */
+    text-decoration: underline; /* Optional: Underline text */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Ensures main content takes up the remaining space */
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative; /* Change from 'fixed' to 'relative' */
+    bottom: 0;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Set the width to 80% of the screen */
+    text-align: justify; /* Justify the text */
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+ul {
+    list-style-type: decimal;
+    margin-left: 20px; /* Optional: adjust indent */
+    padding-left: 0;
+}
+/* Profile Links Styling */
+.profile-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.profile-links li {
+    margin-bottom: 10px;
+}
+
+.profile-links li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.profile-links li a:hover {
+    color: #333;
+}
