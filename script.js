@@ -50,6 +50,8 @@ document.querySelectorAll("nav a").forEach(link => {
 
 
 
-
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
 
 

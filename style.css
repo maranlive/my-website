@@ -1,84 +1,128 @@
+/* Professional Website Aesthetics */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: #f4f4f9;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
 header {
-    background-color: #4CAF50;
+    background: #00264d;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1, header p {
+    margin: 5px 0;
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 nav {
-    background-color: #333;
+    background: #00509e;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    padding: 5px 10px; /* Add some padding for a clickable area */
-    border-radius: 5px; /* Optional: Rounded edges */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #4CAF50; /* Highlight color on hover */
-    color: white; /* Ensure text remains readable */
-    text-decoration: underline; /* Optional: Underline text */
+    background: #003366;
 }
 
 main {
-    padding: 20px;
+    padding: 40px;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
-    flex: 1; /* Ensures main content takes up the remaining space */
-    padding: 20px;
+    flex: 1;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 20px;
+    background: #00264d;
     color: white;
-    position: relative; /* Change from 'fixed' to 'relative' */
-    bottom: 0;
-    width: 100%;
-    
+    font-size: 1em;
+    letter-spacing: 1px;
 }
 
 .card {
-    
-    width: 80%; /* Set the width to 80% of the screen */
-    text-align: justify; /* Justify the text */
+    width: 80%;
     background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
 }
+
 ul {
-    list-style-type: decimal;
-    margin-left: 20px; /* Optional: adjust indent */
-    padding-left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
+ul li {
+    margin-bottom: 15px;
+    background: #e8f0fe;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Profile Links Styling */
 .profile-links {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .profile-links li {
@@ -87,68 +131,49 @@ ul {
 
 .profile-links li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #00509e;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 1.1em;
 }
 
 .profile-links li a:hover {
-    color: #333;
-}
-.dark-mode {
-    background-color: #121212;
-    color: white;
+    color: #00264d;
 }
 
-.dark-mode nav {
-    background-color: black;
-}
-
-.dark-mode a {
-    color: white;
-}
-.dark-mode .card {
-    background: #222; /* Only background color */
-}
-
-.dark-mode footer {
-    background-color: #222;
-}
-.dark-mode * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-/* Position the top-right section */
+/* Top-Right Section */
 #top-right-section {
-    position: absolute;  /* Use absolute positioning */
-    top: 10px;           /* Adjust top margin */
-    right: 10px;         /* Adjust right margin */
-    text-align: right;   /* Align text to the right */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-align: right;
 }
 
 #top-right-section p {
-    margin: 0;           /* Remove extra margin */
-    font-size: 14px;     /* Adjust font size if needed */
+    margin: 0;
+    font-size: 1em;
 }
 
 #top-right-section button {
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #4CAF50;
+    padding: 8px 12px;
+    font-size: 1em;
+    background: #00509e;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
+    font-weight: bold;
 }
 
 #top-right-section button:hover {
-    background-color: #333;
+    background: #00264d;
 }
+
 #current-datetime {
-    color: blue;        /* Set text color to blue */
-    font-size: 16px;    /* Adjust font size */
-    font-weight: bold;  /* Make it bold if needed */
-    margin: 0;          /* Remove default margin */
+    color: #00509e;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
